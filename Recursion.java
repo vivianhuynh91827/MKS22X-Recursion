@@ -62,18 +62,18 @@ public class Recursion {
 
  //----------------------------------------------------------------------------
 
- public static void main(String[] args) {
-   System.out.println(sqrt(100,0.0000001));
-   System.out.println(sqrt(2,0.0000001));
-   System.out.println(sqrt(81,0.0000001));
-   System.out.println(fib(0));
-   System.out.println(fib(1));
-   System.out.println(fib(2));
-   System.out.println(fib(3));
-   System.out.println(fib(4));
-   System.out.println(fib(5));
-   System.out.println(fib(6));
-   System.out.println(makeAllSums(2));
-   System.out.println(makeAllSums(3));
- }
+ // public static void main(String[] args) {
+ //   System.out.println(sqrt(100,0.0000001));
+ //   System.out.println(sqrt(2,0.0000001));
+ //   System.out.println(sqrt(81,0.0000001));
+ //   System.out.println(fib(0));
+ //   System.out.println(fib(1));
+ //   System.out.println(fib(2));
+ //   System.out.println(fib(3));
+ //   System.out.println(fib(4));
+ //   System.out.println(fib(5));
+ //   System.out.println(fib(6));
+ //   System.out.println(makeAllSums(2));
+ //   System.out.println(makeAllSums(3));
+ // }
 }
