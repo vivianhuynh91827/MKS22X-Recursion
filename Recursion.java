@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class Recursion {
 
  /*Recursively find the sqrt using Newton's approximation
@@ -43,6 +45,23 @@ public class Recursion {
 
  //----------------------------------------------------------------------------
 
+ public static ArrayList<Integer> makeAllSums(int n) {
+   ArrayList<Integer> sums = new ArrayList<>();
+   masH(sums, n, 0);
+   return sums;
+ }
+
+ private static void masH(ArrayList<Integer> sums, int n, int sum) {
+   if (n == 0) {
+     sums.add(sum);
+   } else {
+     masH(sums, n-1, sum);
+     masH(sums, n-1, sum + n);
+   }
+ }
+
+ //----------------------------------------------------------------------------
+
  public static void main(String[] args) {
    System.out.println(sqrt(100,0.0000001));
    System.out.println(sqrt(2,0.0000001));
@@ -54,6 +73,7 @@ public class Recursion {
    System.out.println(fib(4));
    System.out.println(fib(5));
    System.out.println(fib(6));
-   System.out.println("hi");
+   System.out.println(makeAllSums(2));
+   System.out.println(makeAllSums(3));
  }
 }
